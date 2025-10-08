@@ -1,0 +1,371 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 120px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #202027;
+}
+
+.hero {
+	background-color: #e1ff8f;
+	background-image: url('images/background.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero__content {
+	position: relative;
+	padding-top: 196px;
+	padding-bottom: 80px;
+}
+
+.hero__title {
+	max-width: 769px;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 1.2;
+}
+
+.hero__description {
+	margin-top: 24px;
+	max-width: 720px;
+	font-size: 24px;
+	line-height: 1.33;
+}
+
+.hero__description span {
+	font-weight: 600;
+}
+
+.hero__button {
+	margin-top: 48px;
+	line-height: 1.42;
+	font-size: 24px;
+	padding: 16px 65px;
+	color: #fff;
+	background: #202027;
+	border-radius: 60px;
+	border: 1px solid #202027;
+	transition: background 0.3s ease, color 0.3s ease;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.hero__button:hover {
+	background: #fff;
+	color: #000;
+}
+
+.hero__opacity-small {
+	position: absolute;
+	top: 69px;
+	left: 156px;
+	pointer-events: none;
+}
+
+.hero__green-big {
+	position: absolute;
+	top: 94px;
+	left: 63px;
+	pointer-events: none;
+}
+
+.hero__green-small {
+	position: absolute;
+	bottom: 0;
+	right: 335px;
+	pointer-events: none;
+}
+
+.hero__opacity-big {
+	position: absolute;
+	bottom: -80px;
+	right: 244px;
+	pointer-events: none;
+}
+
+.hero__slider {
+	margin-top: 80px;
+	overflow: hidden;
+	backdrop-filter: blur(50px);
+	background: #bcec30;
+}
+
+.hero__slider-content {
+	display: flex;
+	padding: 27px 0;
+	gap: 138px;
+}
+
+.hero__slider-item {
+	flex-shrink: 0;
+	position: relative;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.1;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.hero__slider-item:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	background: url('images/hero-black.png') no-repeat;
+	width: 36px;
+	height: 36px;
+	right: -87px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hero_three {
+	background: #202027;
+	padding: 100px 0;
+}
+
+.container_three {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 120px;
+}
+
+.hero_three__frame {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px 24px;
+	justify-items: center;
+}
+
+.card {
+	border-radius: 30px;
+	box-shadow: 0px 12.612px 42.251px -7.57px rgba(0, 0, 0, 0.13);
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2);
+}
+
+.card-cover {
+	width: 100%;
+	height: 314px;
+	overflow: hidden;
+}
+
+.card-cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.card:hover .card-cover img {
+	transform: scale(1.05);
+}
+
+.game-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 24px;
+	flex-grow: 1;
+}
+
+.game-number {
+	font-size: 18px;
+	font-weight: 600;
+	color: #202027;
+}
+
+.game-name {
+	font-size: 22px;
+	font-weight: 700;
+	color: #202027;
+	line-height: 1.3;
+}
+
+.card-1,
+.card-3,
+.card-4,
+.card-6 {
+	width: 378px;
+	height: 473px;
+	border-radius: 30px;
+	box-shadow: 0px 12.612295150756836px 42.251190185546875px -7.57px rgba(0, 0, 0, 0.13);
+	background: rgba(255, 255, 255, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.card-2 {
+	width: 378px;
+	height: 512px;
+	border-radius: 30px;
+	box-shadow: 0px 12.612295150756836px 42.251190185546875px -7.57px rgba(0, 0, 0, 0.13);
+	background: rgba(255, 255, 255, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.card-5 {
+	width: 406.23px;
+	height: 550.07px;
+	border-radius: 32.24px;
+	box-shadow: 0px 13.554157257080078px 45.40642547607422px -8.13px rgba(0, 0, 0, 0.13);
+	background: rgba(255, 255, 255, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.card-5 .card-cover {
+	height: 337px;
+}
+
+.game-number-container {
+	width: 108px;
+	height: 36px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 8px 16px 10px 16px;
+	border-radius: 52.58px;
+	background: rgba(247, 247, 247, 1);
+}
+
+.game-number {
+	width: 76px;
+	height: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	color: rgba(32, 32, 39, 1);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.card-1 .game-name,
+.card-3 .game-name {
+	width: 314px;
+	height: 39px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(32, 32, 39, 1);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.card-2 .game-name {
+	width: 314px;
+	height: 78px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(32, 32, 39, 1);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.card-4 .game-name {
+	width: 314px;
+	height: 117px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(39, 26, 88, 1);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.card-5 .game-name {
+	width: 337.45px;
+	height: 84px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(32, 32, 39, 1);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 34.39px;
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.card-6 .game-name {
+	width: 314px;
+	height: 117px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(32, 32, 39, 1);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.card-5 .game-title {
+	position: relative;
+}
+
+.card-5 .game-title::after {
+	content: '';
+	position: absolute;
+	top: 19px;
+	left: 278px;
+	width: 48px;
+	height: 48px;
+	background: url('images/cursor.png') no-repeat center center;
+	background-size: contain;
+}
